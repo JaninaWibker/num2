@@ -14,5 +14,5 @@ numpy=">=2.2.4"
 flake8="*"
 ruff="*"
 more-itertools="*"
-marimo = ">=0.12.6,<0.13"
+marimo = ">=0.13.6,<0.14"
 
