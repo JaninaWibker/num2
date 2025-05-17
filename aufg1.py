@@ -124,6 +124,7 @@ def _(np):
 
             # check abort condition
             if k >= kmax:
+                print(f"aborted because kmax reached (kmax={kmax})")
                 break
 
         return np.array(x)
@@ -219,6 +220,7 @@ def _(np):
                 if l < lambda_min:
                     break
                 ff_hat = f(x[k] + l * delta_xk)
+                # solve f'(xk)Δxk = -f(xk + λ*Δxk)
                 delta_xk_hat = np.linalg.solve(ffprime, -ff_hat)
 
             # prepare for next loop iteration

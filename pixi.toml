@@ -15,4 +15,5 @@ flake8="*"
 ruff="*"
 more-itertools="*"
 marimo = ">=0.13.6,<0.14"
+scipy = ">=1.15.2,<2"
 
